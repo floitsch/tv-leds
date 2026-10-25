@@ -203,6 +203,13 @@ The live pipeline sends RGB; firmware maps it to GRBW with the dedicated white
 channel off. RGBW diagnostic packets are also supported. Colour/white-point
 calibration and detailed latency measurements remain future work.
 
+## Optional Chromecast remote helper
+
+The [Remote Helper](https://github.com/floitsch/chromecast-remote-helper) maps the Netflix button
+to Jellyfin and provides a configurable nighttime arrow restriction. It uses
+playback state and calibrated Bluetooth proximity, runs independently of the
+LED setup, and has its own settings app, build instructions, and repository.
+
 ## Diagnostics and tests
 
 Host tests cover packet parsing, invalid checksums, bounds, RGB/RGBW order,
