@@ -1,0 +1,20 @@
+name: Checks
+
+on: [push, pull_request]
+
+jobs:
+  host-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Protocol and brightness tests with ASan and UBSan
+        run: |
+          mkdir -p build
+          cc -std=c11 -Wall -Wextra -Werror -g -fsanitize=address,undefined \
+            -I firmware/esp-idf-leds/main firmware/esp-idf-leds/main/protocol.c \
+            firmware/esp-idf-leds/test/protocol-test.c -o build/protocol-test
+          build/protocol-test
+      - name: Check Python and shell syntax
+        run: |
+          python3 -m compileall -q tools
+          bash -n tools/build-native-leds.sh tools/build-patterns.sh

@@ -1,0 +1,8 @@
+{
+  "enable": false,
+  "type": "Stepper",
+  "time_ms": 25,
+  "updateFrequency": 30,
+  "continuousOutput": true,
+  "antiFlickeringFilter": false
+}

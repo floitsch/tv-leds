@@ -1,0 +1,5 @@
+menu "TV LED receiver"
+config TV_LEDS_STANDALONE_TEST
+    bool "Write dim green once, then hold data low without USB input"
+    default n
+endmenu

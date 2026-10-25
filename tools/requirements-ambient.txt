@@ -1,0 +1,2 @@
+websocket-client==1.9.2
+esptool==4.11.0

@@ -1,0 +1,7 @@
+{
+  "host": "tv.local",
+  "user": "root",
+  "identityFile": "~/.ssh/tv-leds",
+  "knownHostsFile": "build/lg-root/known_hosts",
+  "espUsbSerial": "REPLACE_WITH_VERIFIED_USB_SERIAL"
+}

@@ -1,0 +1,9 @@
+{
+  "enable": true,
+  "mode": "osd",
+  "threshold": 5,
+  "borderFrameCnt": 50,
+  "unknownFrameCnt": 600,
+  "maxInconsistentCnt": 10,
+  "blurRemoveCnt": 1
+}

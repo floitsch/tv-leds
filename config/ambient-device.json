@@ -1,0 +1,14 @@
+{
+  "type": "adalight",
+  "rate": 2000000,
+  "colorOrder": "rgb",
+  "refreshTime": 0,
+  "awa_mode": false,
+  "espHandshake": false,
+  "forceSerialDetection": false,
+  "delayAfterConnect": 0,
+  "maxRetry": 120,
+  "lightberry_apa102_mode": false,
+  "enable_ice_rgbw": false,
+  "white_channel_calibration": false
+}
